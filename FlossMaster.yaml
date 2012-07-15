@@ -1,1 +1,5 @@
-foo
+name: FlossMaster
+description: For converting, administrating zour flosses, crosstich patters
+category: FlossMaster	
+version: 0.1
+core: 1.x
