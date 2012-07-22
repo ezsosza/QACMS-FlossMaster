@@ -4,7 +4,6 @@ class ConverterController extends AppController {
 	public $uses = array('Colorcode');
 	
     public function converter() {
-		$this->loadModel('Article');
 	    $this->set("title_for_layout","Fonalmester");	   
     }
     

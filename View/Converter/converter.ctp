@@ -1,6 +1,7 @@
+<?php echo $this->Html->css('/floss_master/css/flossmaster'); ?>
 <?php
 
-echo $this->Form->create('Colorcode',array('action' => 'printview','inputDefaults' => array(
+echo $this->Form->create(null,array('url' => array('controller' => 'Converter', 'action' => 'printview'),'inputDefaults' => array(
         'label' => false,
         'div' => false
     )));
@@ -25,8 +26,8 @@ echo '</table>';
 
 echo $this->Form->input('Colorcode.count',array('type' => 'hidden','value' => 20));
 echo $this->Form->input('Colorcode.kep',array('type' => 'checkbox','label'=>'Képek megjelenitése'));
-echo $this->Form->end('Átvált');
+echo $this->Form->end('Convert');
 echo "<br/>";
-echo $this->Html->link('Használati útmutató', '/files/Fonalmester.pdf');
+echo $this->Html->link('Usage', '/files/Fonalmester.pdf');
 
  ?>
