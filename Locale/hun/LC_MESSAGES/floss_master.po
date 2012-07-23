@@ -1,0 +1,41 @@
+# LANGUAGE translation of FlossMaster Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-05-05 11:50+0000\n"
+"PO-Revision-Date: 2012-07-23 23:05+0100\n"
+"Last-Translator: Zsolt SZALAI <zs.szalai@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "FlossMaster"
+msgstr "FonalMester"
+
+msgid "Name of pattern:"
+msgstr "Minta megnevezése:"
+
+msgid "Pattern"
+msgstr "Minta"
+
+msgid "Show pictures"
+msgstr "Képek mutatása"
+
+msgid "Convert"
+msgstr "Átváltás"
+
+msgid "Usage"
+msgstr "Használati útmutatás"
+
+msgid "No match"
+msgstr "Nincs találat"
+
+msgid "Picture"
+msgstr "Kép"
+
+msgid "Available"
+msgstr "Készleten"
+

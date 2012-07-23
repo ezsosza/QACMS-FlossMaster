@@ -1,0 +1,41 @@
+# LANGUAGE translation of FlossMaster Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-05-05 11:50+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "FlossMaster"
+msgstr ""
+
+msgid "Name of pattern:"
+msgstr ""
+
+msgid "Pattern"
+msgstr ""
+
+msgid "Show pictures"
+msgstr ""
+
+msgid "Convert"
+msgstr ""
+
+msgid "Usage"
+msgstr ""
+
+msgid "No match"
+msgstr ""
+
+msgid "Picture"
+msgstr ""
+
+msgid "Available"
+msgstr ""
