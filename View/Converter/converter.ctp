@@ -25,9 +25,9 @@ echo $this->Html->tableCells($a);
 echo '</table>';
 
 echo $this->Form->input('Colorcode.count',array('type' => 'hidden','value' => 20));
-echo $this->Form->input('Colorcode.kep',array('type' => 'checkbox','label'=>'Képek megjelenitése'));
+echo $this->Form->input('Colorcode.kep',array('type' => 'checkbox','checked'=>'checked','label'=>'Kepek megjelenitese'));
 echo $this->Form->end('Convert');
 echo "<br/>";
-echo $this->Html->link('Usage', '/files/Fonalmester.pdf');
+echo $this->Html->link('Usage', '/FlossMaster/pdf/Fonalmester.pdf');
 
  ?>
