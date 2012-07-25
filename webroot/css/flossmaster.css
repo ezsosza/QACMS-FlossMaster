@@ -1,3 +1,22 @@
+@media print{
+body {margin:0; padding:0; line-height: 1.4em; word-spacing:1px; letter-spacing:0.2px; font: 13px Arial, Helvetica,"Lucida Grande", serif; color: #000;}
+
+#header-top{display:none;}
+#header-bottom{display:none;}
+#printChartText{display:none;}
+
+#printview{
+	font-size:70%;
+
+}
+
+
+}
+#top-shadow {
+	width: 0px;
+	height: 0px;
+
+}
 #ColorcodeConverterForm input, #ColorcodeConverterForm label{
 	padding: 5px;
 	margin: 4px;
@@ -9,7 +28,7 @@
 #printview{
 	text-align: center;
 	width: 300px;
-	font-size:70%;
+	/*font-size:70%;*/
 	
 }
 #prinview h1{

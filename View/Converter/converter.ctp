@@ -5,8 +5,8 @@ echo $this->Form->create(null,array('url' => array('controller' => 'Converter', 
         'label' => false,
         'div' => false
     )));
-echo '<h3 id="minta">';
-echo $this->Form->input('Colorcode.Minta',array('value' => 'Minta','label'=>'Minta megnevezése:'));
+echo '<h3 id="pattern">';
+echo $this->Form->input('Colorcode.Minta',array('value' => __d('floss_master','Pattern'),'label'=>__d('floss_master','Name of pattern:')));
 echo "</h3>";    
 $a = array();
 
@@ -25,9 +25,9 @@ echo $this->Html->tableCells($a);
 echo '</table>';
 
 echo $this->Form->input('Colorcode.count',array('type' => 'hidden','value' => 20));
-echo $this->Form->input('Colorcode.kep',array('type' => 'checkbox','checked'=>'checked','label'=>'Kepek megjelenitese'));
-echo $this->Form->end('Convert');
+echo $this->Form->input('Colorcode.kep',array('type' => 'checkbox','checked'=>'checked','label'=>__d('floss_master','Show pictures')));
+echo $this->Form->end(__d('floss_master','Convert'));
 echo "<br/>";
-echo $this->Html->link('Usage', '/FlossMaster/pdf/Fonalmester.pdf');
+echo $this->Html->link(__d('floss_master','Usage'), '/FlossMaster/pdf/Fonalmester.pdf');
 
  ?>

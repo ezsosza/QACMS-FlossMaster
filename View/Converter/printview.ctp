@@ -1,4 +1,9 @@
-<?php echo $this->Html->css('/floss_master/css/flossmaster'); ?>
+<?php echo $this->Html->css('/floss_master/css/flossmaster'); 
+
+echo $this->Html->link(__d('floss_master','Print this chart'),'#',
+	array('class'=>'','onclick'=>"window.print(); return false;",'id'=>'printChartText'));
+?>
+<br/><br/>
 <div id="printview">
 <h1>
 <?php echo $minta ?>
@@ -11,8 +16,8 @@ for ($i = 0; $i < 20; $i++){
 		if($kep){ $a[sizeof($a)] = array($i+1, '','','','',''); } else
 			{$a[sizeof($a)] = array($i+1, '','','','');}		
 	} elseif ($results[$i] == "ERROR"){
-		if($kep){ $a[sizeof($a)] = array("Nincs találat", '','','','',''); } else
-			{$a[sizeof($a)] = array("Nincs találat", '','','','');}
+		if($kep){ $a[sizeof($a)] = array(__d('floss_master','No match'), '','','','',''); } else
+			{$a[sizeof($a)] = array(__d('floss_master','No match'), '','','','');}
 	} else{
 
 	if ($kep){
@@ -31,12 +36,11 @@ for ($i = 0; $i < 20; $i++){
 	
 		}
 }
-
 echo '<table>';
 if($kep){
-	echo $this->Html->tableHeaders(array('','Dmc', 'Anchor', 'Venus', 'Kép','Készlet'));
+	echo $this->Html->tableHeaders(array('','Dmc', 'Anchor', 'Venus', __d('floss_master','Picture'),__d('floss_master','Available')));
 } else {
-	echo $this->Html->tableHeaders(array('','Dmc', 'Anchor', 'Venus','Készlet'));
+	echo $this->Html->tableHeaders(array('','Dmc', 'Anchor', 'Venus',__d('floss_master','Available')));
 }
 echo $this->Html->tableCells($a);
 echo '</table>';

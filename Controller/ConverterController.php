@@ -1,14 +1,15 @@
 <?php
 class ConverterController extends AppController {
     public $helpers = array('Html', 'Form');
-	public $uses = array('Colorcode');
+    public $uses = array('Colorcode');
+
 	
     public function converter() {
-	    $this->set("title_for_layout","Fonalmester");	   
+	    $this->set("title_for_layout",__d('floss_master','FlossMaster'));	   
     }
     
     public function printview() {
-   	    $this->set("title_for_layout","Fonalmester");
+   	    $this->set("title_for_layout",__d('floss_master','FlossMaster'));
    	    if (sizeof($this->request->data)==0){return;}
     	$count = $this->request->data['Colorcode']['count'];
     	$this->set('minta',$this->request->data['Colorcode']['Minta']);
