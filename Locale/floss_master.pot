@@ -42,3 +42,6 @@ msgstr ""
 
 msgid "Print this chart"
 msgstr ""
+
+msgid "Add row"
+msgstr ""
