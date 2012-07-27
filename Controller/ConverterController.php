@@ -11,7 +11,7 @@ class ConverterController extends AppController {
     public function printview() {
    	    $this->set("title_for_layout",__d('floss_master','FlossMaster'));
    	    if (sizeof($this->request->data)==0){return;}
-    	$count = $this->request->data['Colorcode']['count'];
+    	$count = sizeof($this->request->data['Colorcode'])-3; /* 3 at leszamolunk a count, minta es kep kulcsok miatt*/
     	$this->set('minta',$this->request->data['Colorcode']['Minta']);
     	$this->set('kep',$this->request->data['Colorcode']['kep']);
     	$results=array();
@@ -25,8 +25,8 @@ class ConverterController extends AppController {
 		} elseif($this->request->data['Colorcode'][$i]['venus'] != '') {
 		     $key = array('venus',$this->request->data['Colorcode'][$i]['venus']);
 		} else {
-			$results[sizeof($results)] = "EMPTY";
-			continue;
+/*			$results[sizeof($results)] = "EMPTY";
+			continue;*/break;
 		}
 		$result = $this->Colorcode->find('first', array(
         		'conditions' => array('Colorcode.'.$key[0] => $key[1])));

@@ -11,7 +11,7 @@ echo $this->Html->link(__d('floss_master','Print this chart'),'#',
 <?php
 
 $a = array();
-for ($i = 0; $i < 20; $i++){
+for ($i = 0; $i < sizeof($results); $i++){
 	if ($results[$i] == "EMPTY"){
 		if($kep){ $a[sizeof($a)] = array($i+1, '','','','',''); } else
 			{$a[sizeof($a)] = array($i+1, '','','','');}		
@@ -36,7 +36,7 @@ for ($i = 0; $i < 20; $i++){
 	
 		}
 }
-echo '<table>';
+echo '<table id="printviewtable">';
 if($kep){
 	echo $this->Html->tableHeaders(array('','Dmc', 'Anchor', 'Venus', __d('floss_master','Picture'),__d('floss_master','Available')));
 } else {
